@@ -1,11 +1,21 @@
 void setup()
 {
- pinMode(13,OUTPUT); //ALLOWS 13 TO ABSORB A LOT OF AMPS
+ pinMode(9,OUTPUT); //ALLOWS 13 TO ABSORB A LOT OF AMPS
 }
 void loop()
 {
- digitalWrite(13,HIGH);
-  delay(1);
-  digitalWrite(13,LOW);
-  delay(1);
+ analogWrite(9,255);
+ delay(1000);
+  analogWrite(9,180);
+  delay(1000);
+  analogWrite(9,64);
+ delay(1000);
+  analogWrite(9,32);
+ delay(1000);
+  analogWrite(9,16);
+ delay(1000);
+  analogWrite(9,8);
+ delay(1000);
+  analogWrite(9,255);
+ delay(1000);
 }
